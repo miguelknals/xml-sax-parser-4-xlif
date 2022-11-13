@@ -19,8 +19,11 @@ import xlsxwriter
 import requests
 import json
 # data need it to call IBM Watson 
-api_key="_0qtEwPwdro16ZnOthqjdAY-kSV9JOtwalFg492nuxFC"
-api_url="https://api.eu-de.language-translator.watson.cloud.ibm.com/instances/04fa579e-42d3-45fd-92f1-dd77d9dfeb12"
+# 
+# api_key and api_url MUST be provided from your IBM Clour IBM Watson Language Translator 
+#
+api_key= "your_api_key" 
+api_url= "your_api_url" 
 url="{}/v3/identify".format(api_url)
 headers =  {'Content-Type': 'text/plain;charset=utf-8'}
 
