@@ -6,7 +6,7 @@ Usuallly, all target sentences in the xliff should be of the same target languag
 
 Here an example of the xliff with mix of PT and ES in target sentences.
 
-![](https://github.com/miguelknals/xml-sax-parser-4-xlif/images/XLIFF_with_2_lang.GIF)
+![](https://raw.githubusercontent.com/miguelknals/xml-sax-parser-4-xlif/master/images/XLIFF_with_2_lang.GIF)
 
 Usually, due the large number of words, does not look a good option to manually inspect the full file, so DL/AI is good option here to use a "language identification".  Several services offer language identification, as the Google’s Cloud Translation (https://cloud.google.com/translate). But in is proposed solution we will use the IBM Watson Language Translator that is offered in IBM Cloud (https://cloud.ibm.com/apidocs/language-translator). 
 
@@ -32,7 +32,7 @@ Using python, the main steps will be:
 
 Final result is an excel very similar as this one (in this screen capture, only format has been changed). Notice how the Excel can easily allow as to find what are the trouble segments. This allows solve in large the issue. Notice in the screen capture, the most probable ES or PT pair and the confidence.
 
-![](https://github.com/miguelknals/xml-sax-parser-4-xlif/images/ConfidenceExcel_ES_PT.GIF)
+![](https://raw.githubusercontent.com/miguelknals/xml-sax-parser-4-xlif/master/images/ConfidenceExcel_ES_PT.GIF)
 
 
 Requirements:
