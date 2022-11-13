@@ -1,6 +1,6 @@
 # xml-sax-parser-4-xlif
 
-The purpose of this application is to identify the most probable language of a <target>target sentence</target> in an xliff, and then create an excel output file with the confidence of each sentence. The confidence value is issued by the IBM Watson Translator offered on IBM Cloud.
+The purpose of this application is to identify the most probable language of a '<target>target sentence</target>' in an xliff, and then create an excel output file with the confidence of each sentence. The confidence value is issued by the IBM Watson Translator offered on IBM Cloud.
 
 Usuallly, all target sentences in the xliff should be of the same target language, but due some errors, file could be ended with a mix of languages. This program, will identify these setences.
 
@@ -26,7 +26,8 @@ Using python, the main steps will be:
     "language" : "eo",
     "confidence" : 5.747564458215991E-4
     .
-    .```
+    .
+    ```
 
 - Last step is to extract the response information, and create an excel file with ES or PT depending of the confidence value, the confidence values for ES and PT, source and target. 
 
