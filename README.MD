@@ -1,6 +1,6 @@
 # xml-sax-parser-4-xlif
 
-The purpose of this application is to identify the most probable language of a `&lt;target>target sentence&lt;/target>` in an xliff, and then create an excel output file with the confidence of each sentence. The confidence value is issued by the IBM Watson Translator offered on IBM Cloud.
+The purpose of this application is to identify the most probable language of a `<target>target sentence</target>` in an xliff, and then create an excel output file with the confidence of each sentence. The confidence value is issued by the IBM Watson Translator offered on IBM Cloud.
 
 Usuallly, all target sentences in the xliff should be of the same target language, but due some errors, file could be ended with a mix of languages. This program, will identify these setences.
 
@@ -12,8 +12,8 @@ Usually, due the large number of words, does not look a good option to manually 
 
 Using python, the main steps will be:
 
-- Source and target content extraction: Source XLIF will parsed using a SAX parser implement in python. This parser is event based, that allow us to capture the start and end of tags like `&lt;source> and &lt;target>`. Using these handlers we will get the source/target content. XML.SAX is supported by default in python.
-- Target analysis: Send the `&lt;target>` content (the sentences we want to find the most probable language), to the IBM Watson Language Translator.  The service will return a json file with languages ordered by confidence. 
+- Source and target content extraction: Source XLIF will parsed using a SAX parser implement in python. This parser is event based, that allow us to capture the start and end of tags like `<source>` and `<target>`. Using these handlers we will get the source/target content. XML.SAX is supported by default in python.
+- Target analysis: Send the `<target>` content (the sentences we want to find the most probable language), to the IBM Watson Language Translator.  The service will return a json file with languages ordered by confidence. 
 
 ```{
   "languages" : [ {
